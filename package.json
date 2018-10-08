@@ -1,0 +1,26 @@
+{
+  "name": "vue-cli-plugin-docker-nginx",
+  "version": "1.0.0",
+  "description": "vue-cli 3.0 plugin that sets up a nginx docker container that serves your vue app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truefalse10/vue-cli-plugin-docker-nginx.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "docker",
+    "nginx",
+    "deployment"
+  ],
+  "author": "Sebastian Boolean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/truefalse10/vue-cli-plugin-docker-nginx/issues"
+  },
+  "homepage": "https://github.com/truefalse10/vue-cli-plugin-docker-nginx#readme"
+}
