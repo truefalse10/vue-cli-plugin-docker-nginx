@@ -1,12 +1,13 @@
-FROM node:alpine
-RUN mkdir -p /usr/src/app
+# stage-1: build dist folder
+FROM node:alpine as build
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json", "/usr/src/app/"]
-RUN npm install
-COPY . /usr/src/app
+RUN npm install --silent
+COPY . .
 RUN npm run build
 
+# stage-2: copy static files to nginx image
 FROM nginx:alpine
 EXPOSE 80
 COPY default.conf /etc/nginx/conf.d/default.conf
-COPY --from=0 /usr/src/app/dist /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html

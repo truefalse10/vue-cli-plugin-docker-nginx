@@ -1,8 +1,8 @@
 module.exports = api => {
-    api.extendPackage({
-          scripts: {
-                  'docker': 'docker build . -t app && docker run -d -p 8080:8080 app'
-                }
-        })
-    api.render('./template')
-}
+  api.extendPackage({
+    scripts: {
+      docker: 'docker build . -t vue-app && docker run -d -p:80 vue-app',
+    },
+  });
+  api.render('./template');
+};
