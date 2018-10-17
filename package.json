@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-docker-nginx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue-cli 3.0 plugin that sets up a nginx docker container that serves your vue app",
   "main": "index.js",
   "scripts": {
