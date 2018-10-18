@@ -7,7 +7,7 @@ This is a vue-cli-plugin that adds a minimal docker deployment (**~19MB** + stat
 ### Installation
 
 ```
-vue add vue-cli-plygin-docker-nginx
+vue add vue-cli-plugin-docker-nginx
 ```
 
 This will automatically add all the files needed to your existing vue-cli project
